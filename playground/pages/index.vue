@@ -1,11 +1,13 @@
 <script>
-import Vue from 'vue'
-
-export default Vue.extend({
-  name: 'IndexPage',
-})
+export default {
+  mounted() {
+    this.$metrika.reachGoal('zzz')
+  },
+}
 </script>
 
 <template>
-  <Tutorial />
+  <div>
+    index page
+  </div>
 </template>

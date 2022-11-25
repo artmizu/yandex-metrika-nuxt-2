@@ -1,8 +1,10 @@
+import type { NuxtConfig } from '@nuxt/types'
 import MyModule from '../'
 
-export default {
+const config: NuxtConfig = {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
+  dev: false,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -10,6 +12,10 @@ export default {
     '@nuxt/typescript-build',
     MyModule,
   ],
+
+  yandexMetrika: {
+    id: '49439650',
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -19,3 +25,5 @@ export default {
   build: {
   },
 }
+
+export default config
