@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/artmizu/yandex-metrika-nuxt-2/compare/v1.0.1...v1.0.2) (2022-12-21)
+
+
+### Bug Fixes
+
+* referer header ([7e9c2cc](https://github.com/artmizu/yandex-metrika-nuxt-2/commit/7e9c2cca6522c8e990172ac0d5b622132333d226))
+* tests ([8544857](https://github.com/artmizu/yandex-metrika-nuxt-2/commit/8544857185915364df3c0ef7fa4e0959b88a627d))
+
 ## [1.0.1](https://github.com/artmizu/yandex-metrika-nuxt-2/compare/v1.0.0...v1.0.1) (2022-11-25)
 
 
