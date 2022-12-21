@@ -1,4 +1,4 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/artmizu/yandex-metrika-nuxt-2/CI?label=CI&style=plastic) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/artmizu/yandex-metrika-nuxt-2/release-please?label=release&style=plastic)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/artmizu/yandex-metrika-nuxt-2/release.yml?branch=main&style=plastic)
 
 # 🕵️ Yandex Metrika for Nuxt 2
 
