@@ -38,4 +38,5 @@ export interface MetrikaModuleParams {
 export interface Metrika {
   reachGoal: (goal: string) => void
   hit: (url: string) => void
+  experiments: (experiments: string) => void
 }
