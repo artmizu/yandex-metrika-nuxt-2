@@ -36,7 +36,7 @@ describe('module tests', () => {
     await page.waitForEvent('console')
 
     expect(logs).toContain('Reach goal. Counter: 49439650. Goal id: zzz')
-    expect(logs).toContain('PageView. Counter 49439650. URL: /?_ym_debug=1. Referrer: ')
+    expect(logs).toContain(`PageView. Counter 49439650. URL: ${page.url()}/?_ym_debug=1. Referrer: `)
 
     await page.click('#a')
     await page.waitForEvent('console')
