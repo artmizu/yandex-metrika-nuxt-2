@@ -8,5 +8,8 @@ export default (_: any, inject: any) => {
     hit: (url: string) => {
       consola.info(`[yandex.metrika] hit on "${url}" on dev`)
     },
+    experiments: (experiments: string) => {
+      consola.info(`[yandex.metrika] experiments on "${experiments}" on dev`)
+    },
   })
 }

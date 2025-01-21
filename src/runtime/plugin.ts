@@ -16,5 +16,8 @@ export default (ctx: Context, inject: any) => {
     reachGoal: (identifyer: string) => {
       window.ym(options.id, 'reachGoal', identifyer)
     },
+    experiments: (experiments: string) => {
+      window.ym(options.id, 'experiments', experiments)
+    },
   })
 }

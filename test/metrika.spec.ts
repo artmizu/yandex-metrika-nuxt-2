@@ -34,16 +34,21 @@ describe('module tests', () => {
     await page.waitForEvent('console')
     await page.waitForEvent('console')
     await page.waitForEvent('console')
+    await page.waitForEvent('console')
 
-    expect(logs).toContain('Reach goal. Counter: 49439650. Goal id: zzz')
+    expect(logs).toContain(`PageView. Counter 49439650. URL: ${page.url()}. Referrer: `)
+    expect(logs).toContain('Form goal. Counter 49439650. Init.')
     expect(logs).toContain('PageView. Counter 49439650. URL: /?_ym_debug=1. Referrer: ')
+    expect(logs).toContain('Reach goal. Counter: 49439650. Goal id: zzz')
 
+    const toAPage = page.waitForEvent('console')
     await page.click('#a')
-    await page.waitForEvent('console')
-    expect(logs[3]).toEqual('PageView. Counter 49439650. URL: /a. Referrer: /?_ym_debug=1')
+    await toAPage
+    expect(logs[4]).toEqual('PageView. Counter 49439650. URL: /a. Referrer: /?_ym_debug=1')
 
+    const toBPage = page.waitForEvent('console')
     await page.click('#b')
-    await page.waitForEvent('console')
-    expect(logs[4]).toEqual('PageView. Counter 49439650. URL: /b. Referrer: /a')
+    await toBPage
+    expect(logs[5]).toEqual('PageView. Counter 49439650. URL: /b. Referrer: /a')
   })
 })
