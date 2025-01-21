@@ -36,12 +36,10 @@ describe('module tests', () => {
     await page.waitForEvent('console')
     await page.waitForEvent('console')
 
-
     expect(logs).toContain(`PageView. Counter 49439650. URL: ${page.url()}. Referrer: `)
     expect(logs).toContain('Form goal. Counter 49439650. Init.')
-    expect(logs).toContain(`PageView. Counter 49439650. URL: /?_ym_debug=1. Referrer: `)
+    expect(logs).toContain('PageView. Counter 49439650. URL: /?_ym_debug=1. Referrer: ')
     expect(logs).toContain('Reach goal. Counter: 49439650. Goal id: zzz')
-
 
     const toAPage = page.waitForEvent('console')
     await page.click('#a')
